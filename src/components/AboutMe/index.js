@@ -1,6 +1,6 @@
 import React from 'react'
 import './about-me.scss';
-import { aboutMe } from '../../contents/informations';
+import { aboutMe } from '../../utilities/contents';
 
 const AboutMe = () => {
 

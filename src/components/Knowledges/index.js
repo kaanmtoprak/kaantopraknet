@@ -1,6 +1,6 @@
 import React from 'react'
 import './knowledges.scss';
-import { knowledges } from '../../contents/informations';
+import { knowledges } from '../../utilities/contents'
 
 
 const Knowledges = () => {

@@ -1,7 +1,6 @@
 import React from 'react'
 import './skills.scss';
-import { skills } from '../../contents/informations';
-// import ProgressBar from '../ProgressBar';
+import { skills } from '../../utilities/contents'
 import {ProgressBar} from '../index';
 
 const Skills = () => {

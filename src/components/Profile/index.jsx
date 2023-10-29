@@ -8,7 +8,7 @@ const Profile = () => {
     <div className='profile'>
         <div className="profile__content">
             <figure>
-                <img src="/images/profile.jpeg" alt="profile" priority/>
+                <img src="/images/profile.jpeg" alt="profile"/>
             </figure>
             <div className='profile__content__informations'>
                 <span className='name'>Mehmet Kaan Toprak</span>

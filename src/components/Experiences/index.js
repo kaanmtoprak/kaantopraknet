@@ -1,5 +1,5 @@
 import React from 'react'
-import { experiences } from '../../contents/informations'
+import { experiences } from '../../utilities/contents'
 import './experiences.scss';
 
 const Experiences = () => {

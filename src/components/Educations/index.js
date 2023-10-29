@@ -1,6 +1,6 @@
 import React from 'react'
-import { education } from '../../contents/informations'
 import './educations.scss';
+import { education } from '../../utilities/contents';
 
 const Educations = () => {
   return (
