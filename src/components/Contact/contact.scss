@@ -1,0 +1,35 @@
+@import '../../styles/Settings/colors.scss';
+@import '../../styles/Settings/mixins.scss';
+
+.contact {
+    &__form {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        input ,  textarea {
+            width: 100%;
+            border: none;
+            background: none;
+            color: $grey-06;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0px 0px 11px 0px rgba(0,0,0,0.1);
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        button {
+            width: 100%;
+            background-color: $orange;
+            color: $white;
+            border: none;
+            padding: 5px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: inset 0px 0px 17px 13px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}

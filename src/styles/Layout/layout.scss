@@ -1,0 +1,22 @@
+@import '../Settings/colors.scss';
+
+.layout {
+    max-width: 1248px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    .main {
+        background-color: $grey-02;
+        height: 650px;
+        margin: auto 0;
+        overflow-y: scroll;
+        border-top-right-radius: 8px ;
+        border-bottom-right-radius: 8px ;
+    }
+    .profile {
+        margin: auto 0;
+        height: 670px;
+        width: 100%;
+    }
+}

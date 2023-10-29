@@ -1,0 +1,19 @@
+@import '../../styles/Settings/colors.scss';
+@import '../../styles/Settings/mixins.scss';
+
+
+.skills {
+    $skills : &;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    >div {
+        @include flex-start-center;
+        flex-direction: column;
+        padding: 20px;
+        #{$skills}__name {
+            font-size: 20px;
+            color: $grey-06;
+            margin-bottom: 20px;
+        }
+    }
+}

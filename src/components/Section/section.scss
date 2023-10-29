@@ -1,0 +1,44 @@
+@import '../../styles/Settings/colors.scss';
+@import '../../styles/Settings/mixins.scss';
+
+.section {
+    + .section {
+        margin-top: 50px;
+    }
+    &__title {
+        position: relative;
+        padding: 20px;
+        font-size: 20px;
+        color: $grey-06;
+        &::before {
+            background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 80%);
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+        }
+        span {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                top: 0;
+                width: 25px;
+                height: 25px;
+                border-radius: 100px;
+                background-color: $orange;
+                opacity: .2;
+            }
+        }
+    }
+    
+    &__content {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+}

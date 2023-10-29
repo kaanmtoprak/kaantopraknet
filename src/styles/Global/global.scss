@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../Settings/mixins";
+@import "../Settings/screens";
+@import "../Settings/icons";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+}
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-variant: normal;
+
+  * {
+    font-variant: normal;
+    font-variant-numeric: normal;
+  }
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.5);
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  textarea {
+    font-family: 'Poppins', sans-serif;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  &.overflow {
+    overflow: hidden;
+  }
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include phone {
+    padding: 0 24px;
+  }
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+
+}
+
+figure, ul, li, h1,h2,h3,h4,h5,h6, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.grid-right {
+  text-align: right;
+
+  @include phone {
+    text-align: inherit;
+  }
+}
+
+
+
+
+@import "../Settings/colors";
+@import "../Settings/typography";
+@import "../Settings/icons";
