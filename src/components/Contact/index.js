@@ -18,7 +18,7 @@ const Contact = () => {
         },
         validationSchema,
         onSubmit : (values) => {
-            emailjs.sendForm(process.env.REACT_APP_MAIL_TEMPLATE, process.env.REACT_APP_MAIL_TEMPLATE, form.current, process.env.REACT_APP_MAIL_KEY)
+            emailjs.sendForm(process.env.REACT_APP_GMAIL_SERVICE, process.env.REACT_APP_MAIL_TEMPLATE, form.current, process.env.REACT_APP_MAIL_KEY)
             .then((result) => {
                 console.log(result.text);
                 toast.success('Your message has been sent successfully.')
