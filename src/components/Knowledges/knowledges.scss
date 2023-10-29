@@ -1,11 +1,16 @@
 @import '../../styles/Settings/colors.scss';
 @import '../../styles/Settings/mixins.scss';
+@import '../../styles/Settings/screens.scss';
 
 
 .knowledges {
     $knowledges: &;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include phone {
+        @include flex-start-center;
+        flex-direction: column
+    }
     >div {
         @include flex-center-start;
         flex-direction: row;
