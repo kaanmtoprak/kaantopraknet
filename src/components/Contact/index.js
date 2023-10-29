@@ -7,7 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-
     const form = useRef();
     const {handleSubmit,handleChange,errors,values,handleBlur,submitCount,handleReset} = useFormik({
         initialValues:{
@@ -18,7 +17,7 @@ const Contact = () => {
         },
         validationSchema,
         onSubmit : (values) => {
-            emailjs.sendForm(process.env.REACT_APP_GMAIL_SERVICE, process.env.REACT_APP_MAIL_TEMPLATE, form.current, process.env.REACT_APP_MAIL_KEY)
+            emailjs.sendForm(process.env.REACT_APP_GMAIL, process.env.REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_KEY)
             .then((result) => {
                 console.log(result.text);
                 toast.success('Your message has been sent successfully.')
