@@ -1,12 +1,19 @@
 @import '../../styles/Settings/colors.scss';
 @import '../../styles/Settings/mixins.scss';
+@import '../../styles/Settings/screens.scss';
 
 
 .skills {
     $skills : &;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include under-desktop {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%
+    }
     >div {
+        width: 100%;
         @include flex-start-center;
         flex-direction: column;
         padding: 20px;

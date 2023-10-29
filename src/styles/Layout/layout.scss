@@ -1,4 +1,5 @@
 @import '../Settings/colors.scss';
+@import '../Settings/screens.scss';
 
 .layout {
     max-width: 1248px;
@@ -6,6 +7,17 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.3fr;
+    @include under-desktop {
+        @include flex-center;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 20px ;
+
+    }
+    @include tablet {
+        margin: 0 50px ;
+    }
+
     .main {
         background-color: $grey-02;
         height: 650px;
@@ -13,10 +25,20 @@
         overflow-y: scroll;
         border-top-right-radius: 8px ;
         border-bottom-right-radius: 8px ;
+        @include under-desktop {
+            height: 100%;
+            border-radius: 8px;
+            
+        }
+        
     }
     .profile {
         margin: auto 0;
         height: 670px;
         width: 100%;
+        @include under-desktop {
+            height: 550px;
+            margin: 20px 0;
+        }
     }
 }

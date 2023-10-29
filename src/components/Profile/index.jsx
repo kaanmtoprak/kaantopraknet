@@ -16,13 +16,13 @@ const Profile = () => {
             </div>
         </div>
         <div className="profile__social">
-            <a href="google.com" target='_blank'><i className='icon-github'></i></a>
-            <a href="google.com" target='_blank'><i className='icon-linkedin'></i></a>
-            <a href="google.com" target='_blank'><i className='icon-twitter'></i></a>
-            <a href="google.com" target='_blank'><i className='icon-instagram'></i></a>
+            <a href="https://github.com/kaanmtoprak" target='_blank' rel="noreferrer"><i className='icon-github'></i></a>
+            <a href="https://www.linkedin.com/in/kaanmtprk/" target='_blank' rel="noreferrer"><i className='icon-linkedin'></i></a>
+            <a href="https://twitter.com/kaanmehtprk" target='_blank' rel="noreferrer"><i className='icon-twitter'></i></a>
+            <a href="https://www.instagram.com/mehkaandev" target='_blank' rel="noreferrer"><i className='icon-instagram'></i></a>
         </div>
         <div className="profile__actions">
-            <span>Download CV</span>
+            <a href='cv/en-kt.pdf' download>Download CV</a>
         </div>
 
     </div>
