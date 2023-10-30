@@ -6,7 +6,7 @@
         {
             id:1,
             name:"Age",
-            value:"24"
+            value:"28"
         },
         {
             id:2,
